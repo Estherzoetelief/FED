@@ -1,0 +1,505 @@
+@font-face {
+	font-family: Wagner Modern;
+	src: url(/fonts/Wagner-Modern/Wagner\ Modern.ttf);
+}
+
+@font-face {
+	font-family: p;
+	src: url(/fonts/nimbussannovt.ttf);
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: rgb#111111;
+	--color-background: #f2f2f2;
+	--border-bottom: 1px solid #111111;
+
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code, 
+- Ik heb hier mijn font toe gevoegd omdat ik bij nader
+inzien geen algemene h2 meer gebruik omdat zo ongevraagd
+padding en margin er bij komt bij sommige elementen. */
+
+body {
+	background-color: var(--color-background);
+	font-family: Wagner Modern;
+}
+
+/* Header 
+- ik heb de nav in mijn header toegevoegd, dit vind ik handig 
+omdat alles dan het zelfde is. Als ik tijd over heb kan ik het los van elkaar 
+halen*/
+
+
+header nav {
+
+	height: 4em;
+	display: flex;
+	text-decoration: none;
+	list-style-type: none;
+	border-bottom: var(--border-bottom);
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav button:first-of-type {
+	height: 4em;
+	width: 4em;
+	border: transparent;
+	margin-left:1em;
+}
+
+header nav button:first-of-type img {
+	width: 100%;
+}
+
+header nav a:nth-of-type(1) {
+	width: 6em;
+	height: 4em;
+	display: flex;
+	align-items: center;
+	margin-inline: auto;
+}
+
+header nav a:nth-of-type(1) img {
+	width: 100%;
+}
+
+header section ul li p {
+	z-index: 1000;
+}
+
+header section ul li {
+	display: flex;
+	z-index: 1000;
+	color: #111111;
+	list-style: none;
+	text-decoration: none;
+	border: solid black 0.5px;
+	justify-content: center;
+	align-items: center;
+}
+
+header section ul li:hover {
+	background-color: #d0cfcf;
+	transition: transform 250ms ease-in-out;
+}
+
+header section ul li:nth-of-type(7) {
+	grid-column-start: span 2;
+	color: #111111;
+	list-style: none;
+	text-decoration: none;
+}
+
+
+header section ul {
+	z-index: 1000;
+	color: #111111;
+	list-style: none;
+	text-decoration: none;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 20% 20% 20% 40%;
+	width: 100%;
+	height: 95vh;
+	background-color: #f2f2f2;
+	position: absolute;
+	top: 4em;
+	left: 0;
+	transform: translateX(-100vw);
+	transition: transform 250ms ease-in-out;
+}
+header section.menuUitgeklapt ul {
+	transform: translateX(0);
+}
+
+header nav {
+
+	max-width: 100%;
+	width: 100%;
+}
+
+header nav a:nth-of-type(2) {
+	scale: 0.1em;
+}
+
+/* ik gebruik h1 voor onderwater de belangrijke informatie voor toegangelijkheid.
+ook gebruik ik h3 voor onderwater sub informatie naast h1.  */
+
+h1 {
+	visibility: hidden;
+	position: absolute;
+	font-size: 0.00001em;
+}
+main section section:first-of-type h2 {
+	font-family: Wagner Modern;
+	font-size: 4em;
+	margin-top: 0.5em;
+	margin-left: 1em;
+	margin-right: 1em;
+	color: grey;
+}
+
+/* eerste sectie homepage */
+
+main section section {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0em;
+}
+
+main section:first-of-type {
+
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+main section section img {
+	padding-top: 2em;
+	max-width: 90%;
+}
+
+main section button:first-of-type {
+	font-family: p;
+	letter-spacing: 0.05em;
+	border-radius: 1px;
+	border: 1px solid;
+	padding: 0.3em;
+	margin-top: 0.5em;
+}
+
+
+main section p:first-of-type {
+	font-family: p;
+	padding: 2em;
+	font-size: 1.1em;
+	letter-spacing: 0.05em;
+}
+
+/* youtube video's homepage */
+
+main section:nth-of-type(2) iframe {
+
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	padding: 1em;
+}
+
+/* Eerste grid homepage */
+
+.gridhomepage {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	
+	max-width: 100%;
+}
+
+.gridhomepage section:nth-of-type(1) {
+	max-width: 100%;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	justify-self: flex-end;
+	align-self: center;
+}
+
+.gridhomepage section:nth-of-type(1) img {
+	width: 80vw;
+}
+
+.gridhomepage section:nth-of-type(1) h2 {
+	font-size: 2em;
+	word-break: break-word;
+}
+
+.gridhomepage section:nth-of-type(2) {
+	grid-column-start: 1;
+	grid-row-start: 2;
+	grid-column-end: 2;
+	grid-row-end: 3;
+	margin-left: 1em;
+	align-self: flex-start;
+
+	justify-self: flex-start;
+}
+
+.gridhomepage section:nth-of-type(2) h2 {
+	font-size: 1.5em;
+}
+
+.gridhomepage section:nth-of-type(2) img {
+	width: 100%;
+}
+
+
+.gridhomepage section:nth-of-type(3) {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	grid-column-end: 2;
+	grid-row-end: 3;
+	margin-bottom: auto;
+	justify-self: flex-end;
+	margin-left: 1em;
+
+}
+
+.gridhomepage section:nth-of-type(3) h2 {
+	font-size: 1.5em;
+}
+
+.gridhomepage section:nth-of-type(4) {
+	grid-area: 4 / 1 / 5 / 2;
+	margin-bottom: auto;
+}
+
+.gridhomepage section:nth-of-type(4) h2 {
+	font-size: 1.5em;
+}
+
+.gridhomepage section:nth-of-type(5) {
+	grid-area: 4 / 2 / 5 / 3;
+	margin-bottom: auto;
+	
+}
+
+.gridhomepage section:nth-of-type(4) p {
+	font-size: 0.5em;
+
+}
+
+.gridhomepage section:nth-of-type(5) h2 {
+
+	font-size: 1.3em;
+}
+
+.gridhomepage section:nth-of-type(5) p {
+	font-size: 0.5em;
+
+}
+
+
+
+.shophomepage {
+	position: relative;
+	height: 100vh;
+}
+
+.shophomepage h2 {
+	text-transform: uppercase;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 6em;
+	text-align: center;
+
+}
+
+@media (min-width: 823px) {
+	.shophomepage h2 {
+		font-size: 12em;
+	}
+}
+.shophomepage img {
+	max-width: 10%;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	transform: scale(0.2);
+	left: 0;
+	min-width: 22%;
+}
+
+.shophomepage img:nth-of-type(1) {
+	z-index: 20;
+	right: 20%;
+	left: 0;
+	justify-self: flex-start;
+}
+
+/* 
+
+.shophomepage img:nth-of-type(2) {}
+
+.shophomepage img:nth-of-type(3) {}
+
+.shophomepage img:nth-of-type(4) {}
+
+.shophomepage img:nth-of-type(5) {}
+
+.shophomepage img:nth-of-type(6) {}
+
+.shophomepage img:nth-of-type(7) {}
+
+.shophomepage img:nth-of-type(8) {}
+
+.shophomepage img:nth-of-type(9) {}
+
+.shophomepage img:nth-of-type(10) {}
+
+.shophomepage img:nth-of-type(11) {}
+
+.shophomepage img:nth-of-type(12) {}
+
+.shophomepage img:nth-of-type(13) {}
+
+.shophomepage img:nth-of-type(14) {}
+
+.shophomepage img:nth-of-type(15) {}
+
+.shophomepage img:nth-of-type(16) {}
+
+.shophomepage img:nth-of-type(17) {}
+
+.shophomepage img:nth-of-type(18) {}
+
+.shophomepage img:nth-of-type(19) {}
+
+.shophomepage img:nth-of-type(20) {}
+
+.shophomepage img:nth-of-type(21) {}
+
+.shophomepage img:nth-of-type(21) {}
+
+.shophomepage img:nth-of-type(22) {}
+
+.shophomepage img:nth-of-type(23) {}
+
+.shophomepage img:nth-of-type(24) {} */
+
+@media (min-width: 737px) {
+	.gridhomepage {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.gridhomepage section:nth-of-type(1) {
+		grid-area: 1 / 1 / 3 / 3;
+		max-width: 100%;
+		justify-self: flex-end;
+		align-self: center;
+
+
+	}
+	.gridhomepage section:nth-of-type(2) {
+		grid-area: 1 / 3 /2 / 4;
+		max-width: 100%;
+		justify-self: flex-end;
+		align-self: center;
+	}
+
+	.gridhomepage section:nth-of-type(3) {
+		grid-area: 1 / 4 /2 / 5;
+		max-width: 100%;
+		justify-self: flex-end;
+		align-self: center;
+
+
+	}
+
+	.gridhomepage section:nth-of-type(4) {
+		grid-area: 2 / 3 /3 / 4;
+		max-width: 100%;
+		justify-self: flex-end;
+		align-self: center;
+	}
+	.gridhomepage section:nth-of-type(3) {
+		grid-area: 2 / 4 /3 / 5;
+		max-width: 100%;
+		justify-self: flex-end;
+		align-self: center;
+	}
+
+	.gridhomepage section:nth-of-type(5){
+		grid-column-start: 4;
+		grid-column-end: 5;
+		grid-row-start: 1;
+	}
+
+
+
+}
+
+@media (min-width: 770px) {
+
+	main section:first-of-type section img {
+		z-index: -10;
+	position: absolute;
+	top: 13vh;
+	left: 30vw;
+		width: 60%;
+		justify-self: flex-end;
+		align-self: flex-end;
+
+	}
+	main section:first-of-type section h2 {
+		font-family: Wagner Modern;
+		
+		font-size: 9vw;
+		margin-top: 1em;
+		margin-left: 1em;
+		margin-right: 6em;
+		
+	
+
+	}
+
+	main section:first-of-type section {
+	display: flex;
+		text-align: left;
+		justify-content: flex-start;
+
+	}
+
+	main>section:first-of-type {
+		height: 75vh;
+	}
+
+
+	main>section:first-of-type p  {
+		display: none;
+	}
+
+	main>section:first-of-type button {
+		position: absolute;
+		top:60vh;
+		left:10vw;
+		
+
+
+	}
+
+
+	header>nav>button:first-of-type {
+		display: none;
+	}
+
+header>nav>a:first-of-type {
+	margin-left: 1em;
+}
+
+
+
+}
