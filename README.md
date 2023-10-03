@@ -82,11 +82,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### de hele pagina: 
   <img src="readme-images/foto1.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -198,8 +194,7 @@ Als allerlaatste wil ik zeggen dat er iets mis gaat met het uploden van mijn bes
 <details>
   <summary>uitwerken voor eindgesprek</summary>
 
-  ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -207,16 +202,16 @@ Als allerlaatste wil ik zeggen dat er iets mis gaat met het uploden van mijn bes
 
 
 
-  <img src="readme-images/foto2" width="375px" alt="top">
-   <img src="readme-images/foto3" width="375px" alt="top">
-    <img src="readme-images/foto4" width="375px" alt="top">
+  <img src="readme-images/foto2.png" width="375px" alt="top">
+   <img src="readme-images/foto3.png" width="375px" alt="top">
+    <img src="readme-images/foto4.png" width="375px" alt="top">
 
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 Het is niet gelukt om mijn bestand goed up te loaden in github. Ook is het mij niet gelukt om extra animaties of easter eggs toe te voegen.
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/slechtepagina.png width="375px" alt="bummer">
 </details>
 
 
@@ -232,8 +227,9 @@ Het is niet gelukt om mijn bestand goed up te loaden in github. Ook is het mij n
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1.chat gbt
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/repeat
+  3. https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+  https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
 
 </details>
