@@ -211,6 +211,8 @@ Als allerlaatste wil ik zeggen dat er iets mis gaat met het uploden van mijn bes
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 Het is niet gelukt om mijn bestand goed up te loaden in github. Ook is het mij niet gelukt om extra animaties of easter eggs toe te voegen.
+
+het is mij niet gelukt om alle h2 om te zetten naar een a omdat alles veranderde en ik gewoon echgt niet meer door de bomen het bos niet meer zag. 
   <img src="readme-images/slechtepagina.png width="375px" alt="bummer">
 </details>
 
@@ -231,5 +233,9 @@ Het is niet gelukt om mijn bestand goed up te loaden in github. Ook is het mij n
   2. https://developer.mozilla.org/en-US/docs/Web/CSS/repeat
   3. https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
   https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+  https://webaim.org/techniques/css/invisiblecontent/
+  https://thebrandsmen.com/css-image-hover-effects/
+  https://web.dev/learn/css/animations/
+  https://codepen.io/nxworld/pen/ZYNOBZ
 
 </details>

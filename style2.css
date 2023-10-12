@@ -6,12 +6,12 @@
 
 @font-face {
 	font-family: Wagner Modern;
-	src: url(fonts/Wagner-Modern/Wagner\ Modern.ttf);
+	src: url(../fonts/Wagner-Modern/Wagner\ Modern.ttf);
 }
 
 @font-face {
 	font-family: p;
-	src: url(fonts/nimbussannovt.ttf);
+	src: url(../fonts/nimbussannovt.ttf);
 }
 
 body {
@@ -31,17 +31,18 @@ header nav {
 	justify-content: space-between;
 }
 
-header nav button:first-of-type {
-	border: transparent;
+header nav a:first-of-type {
 	height: 4em;
 	width: 4em;
+	border: transparent;
+	margin-left: 1em;
 }
 
-header nav button:first-of-type img {
+header nav a:first-of-type img {
 	width: 100%;
 }
 
-header nav a:nth-of-type(1) {
+header nav a:nth-of-type(2) {
 	width: 6em;
 	height: 4em;
 	display: flex;
@@ -49,16 +50,19 @@ header nav a:nth-of-type(1) {
 	margin-inline: auto;
 }
 
-header nav a:nth-of-type(1) img {
+header nav a:nth-of-type(2) img {
 	width: 100%;
+	scale:3em;
 }
 
-header section ul li p {
+header section.menu ul li a {
 	z-index: 1000;
-
+margin-left: 1em;
+justify-content: center;
+display: flex;
 }
 
-header section ul li {
+header section.menu ul li  {
 	display: flex;
 	z-index: 1000;
 	color: #111111;
@@ -70,12 +74,9 @@ header section ul li {
 	justify-content: center;
 	align-items: center;
 }
-
 header section ul li:hover {
 	background-color: #d0cfcf;
 	transition: transform 250ms ease-in-out;
-
-
 }
 
 header section ul li:nth-of-type(7) {
@@ -83,9 +84,8 @@ header section ul li:nth-of-type(7) {
 	color: #111111;
 	list-style: none;
 	text-decoration: none;
-
-
 }
+
 
 header section ul {
 	z-index: 1000;
@@ -101,7 +101,7 @@ header section ul {
 	position: absolute;
 	top: 4em;
 	left: 0;
-	transform: translateX(-1000vw);
+	transform: translateX(-100vw);
 	transition: transform 250ms ease-in-out;
 }
 
@@ -109,8 +109,15 @@ header section.menuUitgeklapt ul {
 	transform: translateX(0);
 }
 
+header nav {
 
+	max-width: 100%;
+	width: 100%;
+}
 
+header nav a:nth-of-type(3) {
+	scale: 0.1em;
+}
 /*slider boven aan zonder de dots */
 
 .slider {
@@ -370,25 +377,25 @@ footer ul:first-of-type {
 
 }
 
-@media (min-width: 770px) {
+@media (min-width: 1000px) {
 
-
-	header>nav>button:first-of-type {
+	header nav a:first-of-type  {
 		display: none;
 	}
 
-	header>nav>a:first-of-type {
+	header nav a:nth-of-type(2) {
 
 		align-self: flex-start;
 
 		margin-inline: 1em;
 		order: -1;
+		
 	}
 
 
 
 
-	header>nav>section>ul>li {
+	header section.menu ul li  {
 
 		margin: 1em;
 		border: transparent;
@@ -418,12 +425,14 @@ footer ul:first-of-type {
 	header nav {
 		display: flex;
 		align-items: stretch;
+		overflow: hidden;
 
+	
 	}
 
+	
 
-
-	header nav a:nth-of-type(2) {
+	header nav a:nth-of-type(3) {
 
 		width: 2em;
 		height: 2em;
@@ -432,6 +441,9 @@ footer ul:first-of-type {
 
 	header section ul li {
 		position: relative;
+	}
+	header nav section.menu ul li a {
+		height: 1.2em;
 	}
 
 	header section ul li::before {
@@ -451,6 +463,21 @@ footer ul:first-of-type {
 
 	header section ul li:hover::before {
 		transform: scaleX(1);
-		/* Onderlijn wordt zichtbaar bij hover */
+		/* 
+		Onderlijn wordt zichtbaar bij hover */
 	}
 }
+
+
+
+@media (prefers-color-scheme:light){
+
+    html{
+
+        filter: grayscale(100%);
+
+    }
+
+    }
+
+ 
